@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>공부유형 테스트</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>공부유형 테스트</h1>
+
+  <div class="question active" id="question-1">
+    <p>1. 공부 계획을 세울 때 나의 모습은?</p>
+    <button onclick="nextQuestion('strategist', 1)">공부 시간, 과목별 비중, 복습 타이밍까지 세밀하게 전략을 짠다</button>
+    <button onclick="nextQuestion('immersive', 2)">일단 시작하면 집중력으로 밀어붙인다. 계획보단 흐름이 중요하다</button>
+    <button onclick="nextQuestion('workaholic', 3)">공부 시간을 최대한 확보하고, 쉴 틈 없이 공부 위주로 채운다</button>
+    <button onclick="nextQuestion('communicator', 4)">친구나 선생님과 상의해서 계획을 세운다. 같이 하면 동기부여가 된다</button>
+    <button onclick="nextQuestion('spontaneous', 5)">그날그날 컨디션 따라 하는 편. 대략적인 방향만 잡고 시작한다</button>
+  </div>
+
+  <div class="question" id="question-2">
+    <p>2. 여러 수행이 겹쳤을 때?</p>
+    <button onclick="nextQuestion('strategist', 1)">우선순위를 정하고, 마감 기한과 난이도에 따라 체계적으로 나눈다</button>
+    <button onclick="nextQuestion('immersive', 2)">하나에 집중해서 끝낸 후 다음 걸 한다. 동시에 여러 개는 비효율적이라 생각함</button>
+    <button onclick="nextQuestion('workaholic', 3)">잠 줄이고 밥 줄여서라도 다 끝낼 생각부터 한다. 무조건 해결해야 직성이 풀림</button>
+    <button onclick="nextQuestion('communicator', 4)">친구들과 역할 분담하거나 정보 공유하면서 효율적으로 처리한다</button>
+    <button onclick="nextQuestion('spontaneous', 5)">그때그때 손에 잡히는 것부터 한다. 급한 것부터 처리하며 유연하게 대응한다</button>
+  </div>
+
+  <div class="question" id="question-3">
+    <p>3. 모르는 문제가 나왔을 때 해결하는 방법은?</p>
+    <button onclick="nextQuestion('strategist', 1)">왜 모르는지부터 분석하고, 어떤 개념이 부족한지 파악해서 정리한다</button>
+    <button onclick="nextQuestion('immersive', 2)">당장은 몰라도 끝까지 붙잡고 스스로 해결하려고 한다</button>
+    <button onclick="nextQuestion('workaholic', 3)">답이 나올 때까지 계속 시도한다. 시간이 오래 걸려도 끝까지 파고든다</button>
+    <button onclick="nextQuestion('communicator', 4)">주변 친구나 선생님에게 바로 질문해서 해결한다</button>
+    <button onclick="nextQuestion('spontaneous', 5)">일단 넘기고 나중에 다시 보거나, 감으로 찍고 넘어간다</button>
+  </div>
+
+  <div class="question" id="question-4">
+    <p>4. 새학기가 시작되었을 때 공부하는 유형은?</p>
+    <button onclick="nextQuestion('strategist', 1)">공부계획부터 세세하게 짠다</button>
+    <button onclick="nextQuestion('immersive', 2)">공부에 엄청난 집중력을 발휘한다</button>
+    <button onclick="nextQuestion('workaholic', 3)">매일 빠짐없이 규칙적으로 공부한다</button>
+    <button onclick="nextQuestion('communicator', 4)">친구들과 소통하며 공부한다</button>
+    <button onclick="nextQuestion('spontaneous', 5)">공부하고 싶을 때 즉흥적으로 공부한다</button>
+  </div>
+
+  <div class="question" id="question-5">
+    <p>5. 새로운 학습주제를 접할 때 가정 먼저 하는 것은?</p>
+    <button onclick="nextQuestion('strategist', 1)">학습계획부터 세운다</button>
+    <button onclick="nextQuestion('immersive', 2)">관련 자료를 깊이있게 찾아본다</button>
+    <button onclick="nextQuestion('workaholic', 3)">새로운 학습주제에 많은 시간을 투자한다</button>
+    <button onclick="nextQuestion('communicator', 4)">다른 사람들과 새로운 학습주제에 관한 문제부터 풀어본다</button>
+    <button onclick="nextQuestion('spontaneous', 5)">새로운 학습주제에 관한 문제부터 풀어본다</button>
+  </div>
+
+  <div class="question" id="question-6">
+    <p>6. 그룹 프로젝트에서 맡은 역할이 너무 많고 벅차다. 당신은?</p>
+    <button onclick="nextQuestion('strategist', 1)">할 일을 목록으로 정리해 분할 작업을 계획하고 분배를 요청한다</button>
+    <button onclick="nextQuestion('immersive', 2)">가장 중요하거나 의미 있는 파트에 집중해서 그 부분의 완성도를 높인다</button>
+    <button onclick="nextQuestion('workaholic', 3)">힘들지만 끝까지 해내려고 밤새워서라도 한다</button>
+    <button onclick="nextQuestion('communicator', 4)">팀원들과 적극적으로 소통하며 역할을 조정하고 협업을 시도한다</button>
+    <button onclick="nextQuestion('spontaneous', 5)">지금 당장 가장 쉬운 일부터 하면서 흐름을 타려고 한다</button>
+  </div>
+
+  <div class="question" id="question-7">
+    <p>7. 수행해야 하는 역할이 너무 벅찰 때?</p>
+    <button onclick="nextQuestion('strategist', 1)">다시 계획을 점검하고 새로운 루틴을 설계해 극복한다</button>
+    <button onclick="nextQuestion('immersive', 2)">가장 흥미로운 주제나 과목 하나로 다시 몰입해 극복하려고 한다</button>
+    <button onclick="nextQuestion('workaholic', 3)">공부 시간이 부족했나 싳어 시간을 더 늘리며 버텨본다</button>
+    <button onclick="nextQuestion('communicator', 4)">친구나 선생님과 상담하거나, 함께 공부하며 동기부여를 받는다</button>
+    <button onclick="nextQuestion('spontaneous', 5)">그냥 며칠 푹 쉬었다가 어느 날 갑자기 각 잡고 다시 시작한다</button>
+  </div>
+
+  
+
+  <div id="result" style="display:none;">
+    <h2>당신의 공부 유형은?</h2>
+    <p id="result-text"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
